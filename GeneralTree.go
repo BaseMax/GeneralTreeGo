@@ -142,10 +142,14 @@ func main() {
 	fmt.Println("Height of the tree: ", tree.getHeight())
 
 	// Get the root node
-	fmt.Println("Root node: ", tree.GetRoot())
+	fmt.Println("Root node: ", tree.GetRoot().Value)
 
 	// Get the children of the root node
+	child := tree.GetChildren(tree.Root)
 	fmt.Println("Children of the root node: ", tree.GetChildren(tree.Root))
+	for _, c := range child {
+		fmt.Println("\tChildren of the root node: ", c.Value)
+	}
 
 	// Get the value of the root node
 	fmt.Println("Value of the root node: ", tree.GetValue(tree.Root))
