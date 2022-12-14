@@ -6,7 +6,7 @@ Implentation of a general tree in **Go Programming Language**. A general tree is
 
 **Types:**
 
-```
+```go
 type Node struct 
 	Value    interface{}
 	Children []*Node
@@ -19,7 +19,7 @@ type GeneralTree struct
 
 **Functions:**
 
-```
+```go
 // Create a new general tree
 func NewGeneralTree() *GeneralTree 
 	return &GeneralTree{}
