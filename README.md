@@ -7,12 +7,12 @@ Implentation of a general tree in **Go Programming Language**. A general tree is
 **Types:**
 
 ```go
-type Node struct 
+type Node struct
 	Value    interface{}
 	Children []*Node
 }
 
-type GeneralTree struct 
+type GeneralTree struct
 	Root *Node
 }
 ```
@@ -21,14 +21,10 @@ type GeneralTree struct
 
 ```go
 // Create a new general tree
-func NewGeneralTree() *GeneralTree 
-	return &GeneralTree{}
-}
+func NewGeneralTree() *GeneralTree
 
 // Create a new node
-func NewNode() *Node 
-	return &Node{}
-}
+func NewNode() *Node
 ```
 
 **Methods:**
@@ -41,24 +37,24 @@ func (t *GeneralTree) AddNode(value interface{})
 func (t *GeneralTree) AddNodeToParent(value int, parent *Node)
 
 // Get the root node of the tree
-func (t *GeneralTree) GetRoot() *Node 
+func (t *GeneralTree) GetRoot() *Node
 
 // Get the children of a node
-func (t *GeneralTree) GetChildren(node *Node) []*Node 
+func (t *GeneralTree) GetChildren(node *Node) []*Node
 
 // Get the value of a node
-func (t *GeneralTree) GetValue(node *Node) interface{} 
+func (t *GeneralTree) GetValue(node *Node) interface{}
 
 // Set the value of a node
 func (t *GeneralTree) SetValue(node *Node, value interface{})
 
 // Get the number of nodes in the tree
-func (t *GeneralTree) GetSize() int 
-func (t *GeneralTree) getSize(node *Node) int 
+func (t *GeneralTree) GetSize() int
+func (t *GeneralTree) getSize(node *Node) int
 
 // Get the height of the tree
-func (t *GeneralTree) getHeight() int 
-func (t *Node) GetHeight(node *Node) int 
+func (t *GeneralTree) getHeight() int
+func (t *Node) GetHeight(node *Node) int
 
 // Print the tree
 func (t *GeneralTree) PrintTree()
@@ -118,7 +114,7 @@ func main()
 	// Get the children of the root node
 	child := tree.GetChildren(tree.Root)
 	fmt.Println("Children of the root node: ", tree.GetChildren(tree.Root))
-	for _, c := range child 
+	for _, c := range child
 		fmt.Println("\tChildren of the root node: ", c.Value)
 	}
 
