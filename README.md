@@ -1,6 +1,6 @@
 # General Tree Go
 
-Implentation of a general tree in *Go Programming Language**. A general tree is a tree data structure in which each node can have an arbitrary number of children. We are storing children in an array.
+Implentation of a general tree in **Go Programming Language**. A general tree is a tree data structure in which each node can have an arbitrary number of children. We are storing children in an array.
 
 ## Structure
 
